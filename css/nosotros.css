@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Inconsolata', monospace;
+}
+body {
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --lightest: #f0f5fd;
+    --lighter: #e3eefc;
+    --muted: #ccddf9;
+    --accent: #adc6f4;
+    --primary: #8ca7ed;
+    --secondary: #7a90e6;
+    --btn-hover: #5464d7;
+    --btn-primary: #4552bd;
+    -txt-accent: #3a4599;
+    --txt-muted: #364079;
+    --txt-dark: #1f2347;
+}
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--accent);
+    width: 100%;
+    height: 30px;
+    font-size: 24px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    font-size: 1.2rem;
+}
+.contacts {
+    display: flex;
+    margin-left: 78px;
+    gap: 170px;
+}
+.social {
+    display: flex;
+    margin-right: 83px;
+    gap: 63px;
+}
+.header {
+    display: flex;
+    background-color: var(--primary);
+    width: 100%;
+    height: 216.12px;
+    align-items: center;
+}
+
+.header img {
+    margin-right: 49px;
+}
+
+.header h1 {
+    font-size: 90px;
+    font-weight: normal;
+    text-align: center;
+}
+.nav-bar {
+    background-color: var(--muted);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    padding: 8px;
+    transition: 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: var(--lighter);
+    border-radius: 8px;
+}
+
+.nav-bar a.active {
+    background-color: var(--lightest);
+    border-radius: 8px;
+}
+
+/* Banner main */
+
+.banner {
+    background-image: url(../imgs/nosotros-banner.png);
+    height: 574.28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 128px;
+    font-weight: normal;
+    color: var(--lightest);
+}
+
+/* Mision */
+.mision {
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    background-color: var(--txt-dark);
+    gap: 80px;
+}
+
+.txt {
+    border: 1px solid var(--lightest);
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 46px;
+    color: var(--lightest);
+}
+
+.txt p {
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+.txt h3 {
+    font-size: 46px;
+    font-weight: normal;
+}
+
+/* Equipo */
+.equipo {
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    background-color: var(--secondary);
+    gap: 80px;
+}
+
+/* Iportacion y Exportacion */
+
+.exportacion {
+    height: 475px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem;
+    background-color: var(--lightest);
+    gap: 80px;
+}
+
+.exportacion .txt {
+    color: #000000;
+    border: none;
+}
+
+/* Miembros del equipo */
+
+.miembros{
+    margin-bottom: 2rem;
+}
+
+.miembros h3{
+    font-size: 90px;
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 106px;
+    column-gap: 224px;
+    padding-inline: 4rem;
+}
+
+.card {
+    display: flex;
+    gap: 17px;
+    width: 505.42px;
+    box-shadow: 0 2px 4px;
+    height: 251px;
+    border-radius: 8px;
+    padding-inline: 1rem;
+    padding-top: 2rem;
+}
+
+.card h4 {
+    font-size: 24px;
+}
+
+.card p {
+    width: 273px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.card img{
+    border-radius: 8px;
+}
+
+.member-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Footer */
+
+footer{
+    height: 300px;
+    background-color: var(--btn-hover);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-txt{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 111px;
+    margin-top: 5rem;
+}
+
+.faq, .links, .contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    color: var(--lightest);
+}
+
+.faq a, .links a, .contact-info a{
+    text-decoration: none;
+    color: var(--lightest);
+}
+
+.faq ul, .links ul, .contact-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-txt li{
+    list-style: none;
+}
+
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 106px;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}

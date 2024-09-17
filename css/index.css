@@ -15,7 +15,7 @@ body::-webkit-scrollbar{
 
 :root {
 	--lightest: #f0f5fd;
-	--ighter: #e3eefc;
+	--lighter: #e3eefc;
 	--muted: #ccddf9;
 	--accent: #adc6f4;
 	--primary: #8ca7ed;
@@ -91,8 +91,8 @@ body::-webkit-scrollbar{
     transition: .3s ease;
 }
 
-.nav-bar a:not(.active):hover{
-    background-color: var(--ighter);
+.nav-bar a:hover{
+    background-color: var(--lighter);
     border-radius: 8px;
 }
 
@@ -124,6 +124,11 @@ body::-webkit-scrollbar{
     gap: 98px;
 }
 
+.card p{
+    transition: .3s ease-in-out;
+    padding: 10px;
+}
+
 .card{
     width: 240px;
     height: 223px;
@@ -138,17 +143,39 @@ body::-webkit-scrollbar{
     justify-content: space-between;
     transition:  .2s ease;
 }
-.card:hover{
-    background-image: url(../imgs/index-banner.png);
+.card:nth-child(1):hover{
+    background-image: url(../imgs/servicios.jpg);
     background-size: cover;
     color: var(--lightest);
 }
+.card:nth-child(2):hover{
+    background-image: url(../imgs/medios.jpeg);
+    background-size: cover;
+    color: var(--lightest);
+}
+
+.card:nth-child(3):hover{
+    background-image: url(../imgs/socios.jpg);
+    background-size: cover;
+    color: var(--lightest);
+}
+
+.card:nth-child(1):hover p, .card:nth-child(2):hover p, .card:nth-child(3):hover p {
+    transform: translateY(90px);
+    background-color: rgba(122, 144, 230, 0.698);
+    padding: 10px;
+}
+.card:nth-child(1):hover i, .card:nth-child(2):hover i, .card:nth-child(3):hover i{
+    transform: translateY(-75px);
+}
+
 .card i{
     position: relative;
     bottom: 17px;
     right: -84px;
     cursor: pointer;
     font-size: 2rem;
+    transition: .3s ease-in-out;
 }
 .short-info{
     height: 800px;
@@ -199,7 +226,7 @@ body::-webkit-scrollbar{
 }
 
 .info2-text .content{
-    border: 1px solid var(--ighter);
+    border: 1px solid var(--lighter);
     margin-inline: 40px;
     padding: 60px 0 60px 0;
 }

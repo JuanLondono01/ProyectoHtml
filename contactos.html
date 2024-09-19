@@ -3,10 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/499df900a3.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-        <link rel="stylesheet" href="./css/index.css" />
-        <title>OceanBridge | Inicio</title>
+        <script src="https://kit.fontawesome.com/499df900a3.js" crossorigin="anonymous"></script>
+        <script defer src="js/contactos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <link rel="stylesheet" href="./css/contactos.css" />
+        <title>OceanBridge | Contactos</title>
     </head>
     <body>
         <header>
@@ -45,72 +47,54 @@
                 <img src="./assets/logo.png" width="275" height="297.79" />
                 <h1>OceanBridge Exports</h1>
             </section>
-
         </header>
         <!-- Nav bar -->
         <nav class="nav-bar">
             <ul>
-                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="contactos.html" class="active">Contactos</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
             </ul>
         </nav>
-        
+
         <!-- Banner -->
 
         <section class="banner">
-            <h2>Tu Puente Hacia Mercados Globales</h2>
+            <h2>Contáctenos</h2>
         </section>
 
-        <section class="cards">
-            <a href='servicios.html' class="card">
-                <p>Servicios</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href='medios.html' class="card">
-                <p>Medios</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href='socios.html' class="card">
-                <p>Socios</p>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
+        <!-- Form -->
+        <section id='contactForm' class="form">
+            <p>Contáctenos sobre cualquier cosa relacionada con nuestra empresa o servicios.Haremos todo lo posible por responderle a la brevedad.</p>
+            <form method='post'>
+                <p>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id='nombre' placeholder='Nombre Completo' required autocomplete='off'>
+                </p>
+                <p>
+                    <label for="telefono">Numero de Telefono</label>
+                    <input type="tel" id='telefono' placeholder='+57 123456789' required autocomplete='off'>
+                </p>
+                <p>
+                    <label for="correo">Correo Electronico</label>
+                    <input type="email" id='correo' placeholder='example@example.com' required autocomplete='off'>
+                </p>
+                <p>
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id='empresa' placeholder='Nombre de la Empresa' required autocomplete='off'>
+                </p>
+                <p>
+                    <label for="asunto">Asunto</label>
+                    <textarea  id="asunto" placeholder='Asunto' required autocomplete='off'></textarea>
+                </p>
+                <p>
+                    <label for="pregunta">Pregunta</label>
+                    <input type="text" id='pregunta' placeholder='Haga su pregunta'>
+                </p>
+                <button id='sub-btn' type='submit'>Enviar <i class="fa-regular fa-envelope" style="color: #ffffff;"></i></button>
+            </form>
         </section>
-
-        <!-- Short text -->
-
-        <section class="short-info">
-            <h3>Facilitar el comercio internacional de productos de alta calidad</h3>
-            <img src="./imgs/short-info.png" width="800" height="529" />
-            <p>
-                En OceanBridge Exports, nos enfocamos en brindar soluciones de importación y exportación personalizadas
-                y eficientes para nuestros clientes.
-            </p>
-        </section>
-
-        <!-- Short text -->
-
-        <section class="short-info-2">
-            <hgroup class="info2-text">
-                <div class="content">
-                    <h3>Conectando el mundo a través del comercio</h3>
-                    <p>
-                        En Compañía OceanBridge, nos enfocamos en brindar soluciones personalizadas para cada uno de
-                        nuestros clientes, teniendo en cuenta sus necesidades y expectativas.
-                    </p>
-                </div>
-            </hgroup>
-            <img src="imgs/short-info-2.png" />
-        </section>
-
-        <!-- Contact Banner -->
-
-        <section class="contact-banner">
-            <h3>Únase a nuestra red de clientes satisfechos y crezcamos juntos</h3>
-            <button><a href="#">Contactanos</a></button>
-        </section>
-
         <!-- Footer -->
 
         <footer>

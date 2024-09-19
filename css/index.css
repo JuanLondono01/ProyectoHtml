@@ -145,6 +145,8 @@ body::-webkit-scrollbar{
     flex-direction: column;
     justify-content: space-between;
     transition:  .2s ease;
+    text-decoration: none;
+    color: #000000;
 }
 .card:nth-child(1):hover{
     background-image: url(../imgs/servicios.jpg);

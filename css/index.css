@@ -154,16 +154,11 @@ body::-webkit-scrollbar{
     color: var(--lightest);
 }
 .card:nth-child(2):hover{
-    background-image: url(../imgs/medios.jpeg);
-    background-size: cover;
-    color: var(--lightest);
-}
-
-.card:nth-child(3):hover{
     background-image: url(../imgs/socios.jpg);
     background-size: cover;
     color: var(--lightest);
 }
+
 
 .card:nth-child(1):hover p, .card:nth-child(2):hover p, .card:nth-child(3):hover p {
     transform: translateY(90px);

@@ -421,6 +421,10 @@ footer {
         transform: translateY(-50px);
     }
 
+    .short-info{
+        margin-top: -6rem;
+    }
+
     .short-info h3 {
         font-size: 30px;
         width: 90%;
@@ -478,10 +482,14 @@ footer {
         padding: 20px;
     }
 
+
+
     .footer-txt {
         flex-direction: row;
         gap: 20px;
+        font-size: .7rem;
     }
+
 }
 
 /* Tablet */

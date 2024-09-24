@@ -129,7 +129,7 @@ body::-webkit-scrollbar {
     grid-template-columns: repeat(3,1fr);
     column-gap: 50px;
     row-gap: 64px;
-    max-height: 159vh;
+    height: 70rem;
     margin-bottom: 2rem;
     overflow-y: hidden;
     transition: 1s ease-in-out;
@@ -144,9 +144,10 @@ body::-webkit-scrollbar {
     width: fit-content;
     position: absolute;
     font-size: 2.4rem;
-    top: 121rem;
+    top: 122rem;
     left: 47%;
     transition: .4s ease-in-out;
+    cursor: pointer;
 }
 .servicios article:nth-child(n+8) {
     display: none;
@@ -157,11 +158,11 @@ body::-webkit-scrollbar {
 }
 
 .servicios.active {
-    max-height: 390vh;
+    height: 170rem;
 }
 
 .label.active{
-    transform: translateY(98rem) rotate(180deg);
+    transform: translateY(100rem) rotate(180deg);
 }
 
 .card{
@@ -344,7 +345,8 @@ footer{
         column-gap: 30px;
         row-gap: 40px;
         padding: 10px;
-        max-height: 120rem;
+        height: 48rem;
+        overflow-y: hidden;
         margin-bottom: 1rem;
         padding-bottom: 4rem;
     }
@@ -353,14 +355,18 @@ footer{
         height: fit-content;
         width: fit-content;
         position: absolute;
-        font-size: 2.4rem;
-        top: 119rem;
+        font-size: 2rem;
+        top: 91rem;
         left: 46%;
         transition: .4s ease-in-out;
     }
 
+    .servicios.active{
+        height: 200rem;
+    }
+
     .label.active{
-        transform: translateY(102rem) rotate(180deg);
+        transform: translateY(151rem) rotate(180deg);
     }
     .card {
         height: auto;
@@ -381,7 +387,12 @@ footer{
 
     .container p{
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .logos{
+        justify-content: center;
+        margin-left: 2rem;
     }
 
     .clientes h3 {
@@ -394,10 +405,13 @@ footer{
         padding: 20px;
     }
 
+
     .footer-txt {
         flex-direction: row;
         gap: 20px;
+        font-size: .7rem;
     }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {

@@ -425,9 +425,11 @@ footer {
         padding: 20px;
     }
 
+   
     .footer-txt {
         flex-direction: row;
         gap: 20px;
+        font-size: .7rem;
     }
 
 
